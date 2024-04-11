@@ -2,7 +2,7 @@
 all docker setup of mongo/mogo replication
 
 ##steps to configure mongo replica
-'''
+```
   up 3 mongo replica instances
   - docker compose -f replica-compose.yml up -d
 
@@ -15,5 +15,5 @@ all docker setup of mongo/mogo replication
   And run the following commands
   - mongo < init_replica.js  
 
-'''
+```
 
