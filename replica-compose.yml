@@ -1,0 +1,20 @@
+version: "3"
+services:
+  replica-1:
+    container_name: replica-1
+    image:   sujant/mongo4.4.0:1.0.0
+    networks:
+      - replica
+  replica-2:
+    container_name: replica-2
+    image:   sujant/mongo4.4.0:1.0.0
+    networks:
+      - replica
+  replica-3:
+    container_name: replica-3
+    image:   sujant/mongo4.4.0:1.0.0
+    networks:
+      - replica
+
+networks:
+  replica:
